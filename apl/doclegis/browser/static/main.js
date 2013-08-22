@@ -109,7 +109,7 @@ $(document).ready(function() {
     	.bind('filter', function () { eventFilter(); })
     	.dataTable( {
         "oLanguage": {
-            "sSearch": "Search all columns:"
+            "sUrl": "++resource++doclegis/datatables_"+$('html').attr('lang')+""
         },
         "aoColumnDefs": [
         	{"bVisible": false, "aTargets": [3, 4, 5, 6]},
@@ -145,9 +145,17 @@ $(document).ready(function() {
     	fnCreateSelect( getListValue(5) ));
     $('select', 'div#filter_institution').change( 
     	function () {
-            oTable.fnFilter( $(this).val(), 5 );
+    		val = $(this).val();
+            oTable.fnFilter(val, 5 );
+            if (val == "Communes" ||  val == "CPAS"
+            	){
+            	$('#spantohid').show();
+            }else {
+            	$('#spantohid').hide();
+            }
      	}
      );
+    $('#spantohid').hide();
 
     $('div#filter_commune').html(
     	fnCreateSelect( getListValue(6) ));

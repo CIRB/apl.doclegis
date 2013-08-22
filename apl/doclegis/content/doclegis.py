@@ -20,6 +20,14 @@ from apl.doclegis.browser import vocabulary
 DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
 
     # -*- Your Archetypes field definitions here ... -*-
+    atapi.StringField(
+        'numero',
+        storage=atapi.AnnotationStorage(),
+        widget=atapi.StringWidget(
+            label=_(u"Numero ou ID"),
+            description=_(u""),
+        ),
+    ),
 
     atapi.StringField(
         'text',
@@ -49,19 +57,12 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
             label=_(u"Date"),
             description=_(u"jj/mm/aaaa"),
             show_hm=False,
-            starting_year=1950,
+            starting_year=1830,
         ),
         validators=('isValidDate'),
     ),
 
-    atapi.StringField(
-        'numero',
-        storage=atapi.AnnotationStorage(),
-        widget=atapi.StringWidget(
-            label=_(u"Numero ou ID"),
-            description=_(u""),
-        ),
-    ),
+
 
     atapi.DateTimeField(
         'datepublication',
@@ -70,7 +71,7 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
             label=_(u"Date de publication au moniteur si connue"),
             description=_(u"jj/mm/aaaa"),
             show_hm=False,
-            starting_year=1950,
+            starting_year=1830,
         ),
         validators=('isValidDate'),
     ),

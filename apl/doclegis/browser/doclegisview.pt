@@ -31,7 +31,7 @@
             		</div>
             		<div id="filter_institution"> </div>
             	</span>
-            	<span>
+            	<span id='spantohid'>
             		<div i18n:translate="commune">
             			commune
             		</div>

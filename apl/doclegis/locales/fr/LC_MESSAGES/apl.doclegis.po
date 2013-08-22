@@ -37,7 +37,7 @@ msgstr "Loi"
 
 #: apl.doclegis:/browser/vocabulary.py:18
 msgid "ordonnance"
-msgstr "Ordonnace"
+msgstr "Ordonnance"
 
 #: apl.doclegis:/browser/vocabulary.py:19
 msgid "arreteroyal"

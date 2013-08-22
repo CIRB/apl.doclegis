@@ -65,12 +65,6 @@ function fnCreateSelect( aData )
     return r+'</select>';
 }
  
-function eventFilter() {
-	console.log('filter');
-}
-
-
-
 function eliminateDuplicates(arr) {
   var i,
       len=arr.length,
@@ -105,9 +99,7 @@ function getListValue(numcols) {
 
 $(document).ready(function() {
     /* Initialise the DataTable */
-    oTable = $('#doclegisTable')
-    	.bind('filter', function () { eventFilter(); })
-    	.dataTable( {
+    oTable = $('#doclegisTable').dataTable( {
         "oLanguage": {
             "sUrl": "++resource++doclegis/datatables_"+$('html').attr('lang')+""
         },

@@ -63,7 +63,6 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
     ),
 
 
-
     atapi.DateTimeField(
         'datepublication',
         storage=atapi.AnnotationStorage(),

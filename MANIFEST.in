@@ -1,2 +1,8 @@
 recursive-include apl *
 global-exclude *pyc
+include *.in
+include *.py
+include *.txt
+recursive-include docs *.GPL
+recursive-include docs *.txt
+

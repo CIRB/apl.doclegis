@@ -6,7 +6,7 @@
   <property name="description"
     i18n:translate="">Un document legislatif</property>
   <property name="content_meta_type">DocLegis</property>
-  <property name="content_icon">document_icon.gif</property>
+  <property name="content_icon">++resource++doclegis/doclegis.png</property>
   <property name="product">apl.doclegis</property>
   <property name="factory">addDocLegis</property>
   <property name="immediate_view">atct_edit</property>

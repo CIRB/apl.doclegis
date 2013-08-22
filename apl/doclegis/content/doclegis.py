@@ -8,6 +8,7 @@ from zope.interface import implements
 from Products.Archetypes import atapi
 from Products.ATContentTypes.content import base
 from Products.ATContentTypes.content import schemata
+from Products.Archetypes.utils import Vocabulary
 
 # -*- Message Factory Imported Here -*-
 from apl.doclegis import doclegisMessageFactory as _
@@ -48,6 +49,7 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
             label=_(u"Date"),
             description=_(u"jj/mm/aaaa"),
             show_hm=False,
+            starting_year=1950,
         ),
         validators=('isValidDate'),
     ),
@@ -56,7 +58,7 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
         'numero',
         storage=atapi.AnnotationStorage(),
         widget=atapi.StringWidget(
-            label=_(u"Numéro ou ID"),
+            label=_(u"Numero ou ID"),
             description=_(u""),
         ),
     ),
@@ -68,16 +70,17 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
             label=_(u"Date de publication au moniteur si connue"),
             description=_(u"jj/mm/aaaa"),
             show_hm=False,
+            starting_year=1950,
         ),
         validators=('isValidDate'),
     ),
 
     atapi.StringField(
-        'administration',
-        vocabulary=vocabulary.ADMINISTRATIONS,
+        'institution',
+        vocabulary=vocabulary.INSTITUTIONS,
         storage=atapi.AnnotationStorage(),
         widget=atapi.MultiSelectionWidget(
-            label=_(u"Administration(s)"),
+            label=_(u"Institution(s)"),
             description=_(u""),
             format='checkbox',
         ),
@@ -86,10 +89,10 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
 
     atapi.StringField(
         'theme',
-        vocabulary=vocabulary.THEMES,
+        vocabulary='_themeVocabulary',
         storage=atapi.AnnotationStorage(),
         widget=atapi.MultiSelectionWidget(
-            label=_(u"Thème(s)"),
+            label=_(u"Theme(s)"),
             description=_(u""),
             format='checkbox',
         ),
@@ -112,7 +115,7 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
         'url',
         storage=atapi.AnnotationStorage(),
         widget=atapi.StringWidget(
-            label=_(u"Url où se trouve le document"),
+            label=_(u"Url ou se trouve le document"),
             description=_(u""),
         ),
         validators=('isURL'),
@@ -122,7 +125,7 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
         'fichier',
         storage=atapi.AnnotationStorage(),
         widget=atapi.FileWidget(
-            label=_(u"Fichier à attacher"),
+            label=_(u"Fichier a attacher"),
             description=_(u""),
         ),
     ),
@@ -149,7 +152,7 @@ class DocLegis(base.ATCTContent):
     description = atapi.ATFieldProperty('description')
 
     # -*- Your ATSchema to Python Property Bridges Here ... -*-
-    administration = atapi.ATFieldProperty('administration')
+    institution = atapi.ATFieldProperty('institution')
 
     theme = atapi.ATFieldProperty('theme')
 
@@ -167,5 +170,7 @@ class DocLegis(base.ATCTContent):
 
     document_type = atapi.ATFieldProperty('document_type')
 
+    def _themeVocabulary(self):
+        return Vocabulary(vocabulary.THEMES, self, 'apl.doclegis')
 
 atapi.registerType(DocLegis, PROJECTNAME)

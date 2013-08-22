@@ -12,33 +12,33 @@ class IDocLegis(Interface):
 
     # -*- schema definition goes here -*-
     numero = schema.TextLine(
-        title=_(u"Numéro ou ID"),
+        title=_(u"Numero ou ID"),
         required=False,
-        description=_(u"Field description"),
+        description=_(u""),
     )
 #
     date = schema.Date(
         title=_(u"Date"),
         required=False,
-        description=_(u"Field description"),
+        description=_(u""),
     )
 #
     text = schema.TextLine(
         title=_(u"Corps de texte"),
         required=False,
-        description=_(u"Field description"),
+        description=_(u""),
     )
 #
     document_type = schema.TextLine(
         title=_(u"Type de document"),
         required=True,
-        description=_(u"Field description"),
+        description=_(u""),
     )
 #
-    administration = schema.TextLine(
-        title=_(u"Administration(s)"),
+    institution = schema.TextLine(
+        title=_(u"Institution(s)"),
         required=False,
-        description=_(u"Field description"),
+        description=_(u""),
     )
 #
     theme = schema.TextLine(
@@ -50,17 +50,17 @@ class IDocLegis(Interface):
     commune = schema.TextLine(
         title=_(u"Commune (si applicable)"),
         required=False,
-        description=_(u"Field description"),
+        description=_(u""),
     )
 #
     url = schema.TextLine(
         title=_(u"Url ou se trouve le document"),
         required=False,
+        description=_(u""),
+    )
+
+    fichier = schema.TextLine(
+        title=_(u"Fichier a attacher"),
+        required=False,
         description=_(u"Field description"),
     )
-#
-    # fichier = schema.TextLine(
-    #     title=_(u"Fichier a attacher"),
-    #     required=False,
-    #     description=_(u"Field description"),
-    # )

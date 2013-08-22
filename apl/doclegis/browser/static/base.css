@@ -1,0 +1,14 @@
+div#filter{
+	height: 75px;
+}
+#filter span, #filter span div {
+
+}
+
+#filter span {
+	float: left;
+}
+
+#doclegisTable {
+	clear: both;
+}

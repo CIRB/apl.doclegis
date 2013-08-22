@@ -1,6 +1,8 @@
 from zope.interface import alsoProvides
 from apl.doclegis.browser.doclegisview import IDocLegisView
 
+from datetime import datetime
+
 
 def testSetup(context):
 
@@ -48,6 +50,8 @@ def create_doclegis(folder, num, lang):
     doclegis.setText('Corps de texte {} {}'.format(lang, num))
     docum_type = ['loi', 'ordonnance', 'circulaire']
     doclegis.setDocument_type(docum_type[num % len(docum_type)])
-    doclegis.setAdministration('communes')
-    doclegis.setCommune('uccle')
+    doclegis.setDate(datetime.now())
+    doclegis.setTheme(['elections', 'international', ''])
+    doclegis.setInstitution(['communes', ])
+    doclegis.setCommune(['uccle', ])
     return doclegis

@@ -4,20 +4,65 @@
       i18n:domain="apl.doclegis">
 <body>
     <div metal:fill-slot="main">
-        <tal:main-macro metal:define-macro="main"
-                        tal:define="testview view/test">
+        <tal:main-macro metal:define-macro="main">
+        	<h1 tal:content="context/title">title</h1>
+            <div id="filter">
+            	<span>
+            		<div i18n:translate="document_type">
+            			document_type
+            		</div>
+            		<div id="filter_document_type"> </div>
+            	</span>
+            	<span>
+            		<div i18n:translate="theme">
+            			theme
+            		</div>
+            		<div id="filter_theme"> </div>
+            	</span>
+            	<span>
+            		<div i18n:translate="annee">
+            			annee
+            		</div>
+            		<div id="filter_year"> </div>
+            	</span>
+            	<span>
+            		<div i18n:translate="institution">
+            			institution
+            		</div>
+            		<div id="filter_institution"> </div>
+            	</span>
+            	<span>
+            		<div i18n:translate="commune">
+            			commune
+            		</div>
+            		<div id="filter_commune"> </div>
+            	</span>
+            </div>
 
-            
 			<table id="doclegisTable">
 				<thead>
 					<th>Titre</th>
 					<th>Type</th>
 					<th>Date</th>
+					<th>Année 3</th>
+					<th>Theme 4</th>
+					<th>Institution 5</th>
+					<th>Commune 6</th>
 				</thead>
 				<tr tal:repeat="doclegis view/get_doclegis">
-					<td tal:content="doclegis/title">title</td>
+					<td>
+					 	<a href="" tal:attributes="href doclegis/absolute_url">
+						<tal:block tal:content="doclegis/title">
+							title
+						</tal:block>
+						</a>
+					</td>
 					<td tal:content="doclegis/document_type">type</td>
-					<td tal:content="doclegis/commune">date</td>
+					<td tal:content="doclegis/date">date</td>
+					<td tal:content="doclegis/annee">annee</td>
+					<td tal:content="doclegis/theme">theme</td>
+					<td tal:content="doclegis/institution">institution</td>
+					<td tal:content="doclegis/commune">commune</td>
 				</tr>
 			</table>
         </tal:main-macro>

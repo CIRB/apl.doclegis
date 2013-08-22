@@ -1,0 +1,385 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"POT-Creation-Date: Thu Aug 22 15:49:15 2013\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Zope 3 Developers <zope-dev@zope.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+
+#: apl.doclegis:/browser/doclegisview.pt:11
+msgid "document_type"
+msgstr "Type de document"
+
+#: apl.doclegis:/browser/doclegisview.pt:17
+msgid "theme"
+msgstr "Thême"
+
+#: apl.doclegis:/browser/doclegisview.pt:23
+msgid "annee"
+msgstr "Année"
+
+#: apl.doclegis:/browser/doclegisview.pt:29
+msgid "institution"
+msgstr "Institution"
+
+#: apl.doclegis:/browser/doclegisview.pt:35
+msgid "commune"
+msgstr "Commune"
+
+#: apl.doclegis:/browser/vocabulary.py:17
+msgid "loi"
+msgstr "Loi"
+
+#: apl.doclegis:/browser/vocabulary.py:18
+msgid "ordonnance"
+msgstr "Ordonnace"
+
+#: apl.doclegis:/browser/vocabulary.py:19
+msgid "arreteroyal"
+msgstr "Arrêté royal"
+
+#: apl.doclegis:/browser/vocabulary.py:20
+msgid "arretegouvernement"
+msgstr "Arrêté gouvernement"
+
+#: apl.doclegis:/browser/vocabulary.py:21
+msgid "circulaire"
+msgstr "Circulaire"
+
+#: apl.doclegis:/browser/vocabulary.py:22
+msgid "reglement"
+msgstr "Règlement"
+
+#: apl.doclegis:/browser/vocabulary.py:26
+msgid "communes"
+msgstr "Communes"
+
+#: apl.doclegis:/browser/vocabulary.py:27
+msgid "cpas"
+msgstr "CPAS"
+
+#: apl.doclegis:/browser/vocabulary.py:28
+#: apl.doclegis:/browser/vocabulary.py:40
+msgid "cultesetlaicite"
+msgstr "Cultes et laicïté"
+
+#: apl.doclegis:/browser/vocabulary.py:29
+msgid "intercommunales"
+msgstr "Intercommunales"
+
+#: apl.doclegis:/browser/vocabulary.py:30
+msgid "regiescommunales"
+msgstr "Régies communales"
+
+#: apl.doclegis:/browser/vocabulary.py:31
+msgid "zonesdepolice"
+msgstr "Zones de police"
+
+#: apl.doclegis:/browser/vocabulary.py:32
+msgid "lemontdepiete"
+msgstr "Le Mont-de-Piété"
+
+#: apl.doclegis:/browser/vocabulary.py:34
+msgid "lesassociationschapitrexii"
+msgstr "Le réseau hospitalier IRIS"
+
+#: apl.doclegis:/browser/vocabulary.py:36
+msgid "lereseauhospitalieriris"
+msgstr "Les associations Chapitre XII"
+
+#: apl.doclegis:/browser/vocabulary.py:41
+msgid "elections"
+msgstr "Elections"
+
+#: apl.doclegis:/browser/vocabulary.py:42
+msgid "fiscalite"
+msgstr "Fiscalité"
+
+#: apl.doclegis:/browser/vocabulary.py:43
+msgid "marchespublics"
+msgstr "Marchés publics"
+
+#: apl.doclegis:/browser/vocabulary.py:44
+msgid "soutienfinancier"
+msgstr "Soutien financier"
+
+#: apl.doclegis:/browser/vocabulary.py:45
+msgid "egalitedeschancesetdiversite"
+msgstr "Egalité des chances et diversité"
+
+#: apl.doclegis:/browser/vocabulary.py:46
+msgid "finances"
+msgstr "Finances"
+
+#: apl.doclegis:/browser/vocabulary.py:47
+msgid "international"
+msgstr "International"
+
+#: apl.doclegis:/browser/vocabulary.py:48
+msgid "personnel"
+msgstr "Personnel"
+
+#: apl.doclegis:/browser/vocabulary.py:52
+msgid "anderlecht"
+msgstr "Anderlecht"
+
+#: apl.doclegis:/browser/vocabulary.py:53
+msgid "auderghem"
+msgstr "Auderghem"
+
+#: apl.doclegis:/browser/vocabulary.py:54
+msgid "berchemsainteagathe"
+msgstr "Berchem-Sainte-Agathe"
+
+#: apl.doclegis:/browser/vocabulary.py:55
+msgid "bruxellesville"
+msgstr "Bruxelles-Ville"
+
+#: apl.doclegis:/browser/vocabulary.py:56
+msgid "etterbeek"
+msgstr "Etterbeek"
+
+#: apl.doclegis:/browser/vocabulary.py:57
+msgid "evere"
+msgstr "Evere"
+
+#: apl.doclegis:/browser/vocabulary.py:58
+msgid "forest"
+msgstr "Forest"
+
+#: apl.doclegis:/browser/vocabulary.py:59
+msgid "ganshoren"
+msgstr "Ganshoren"
+
+#: apl.doclegis:/browser/vocabulary.py:60
+msgid "ixelles"
+msgstr "Ixelles"
+
+#: apl.doclegis:/browser/vocabulary.py:61
+msgid "jette"
+msgstr "Jette"
+
+#: apl.doclegis:/browser/vocabulary.py:62
+msgid "koekelberg"
+msgstr "Koekelberg"
+
+#: apl.doclegis:/browser/vocabulary.py:63
+msgid "molenbeeksaintjean"
+msgstr "Molenbeek-Saint-Jean"
+
+#: apl.doclegis:/browser/vocabulary.py:64
+msgid "saintgilles"
+msgstr "Saint-Gilles"
+
+#: apl.doclegis:/browser/vocabulary.py:65
+msgid "saintjossetennoode"
+msgstr "Saint-Josse-ten-Noode"
+
+#: apl.doclegis:/browser/vocabulary.py:66
+msgid "schaerbeek"
+msgstr "Schaerbeek"
+
+#: apl.doclegis:/browser/vocabulary.py:67
+msgid "uccle"
+msgstr "Uccle"
+
+#: apl.doclegis:/browser/vocabulary.py:68
+msgid "watermaelboitsfort"
+msgstr "Watermael-Boitsfort"
+
+#: apl.doclegis:/browser/vocabulary.py:69
+msgid "woluwesaintlambert"
+msgstr "Woluwe-Saint-Lambert"
+
+#: apl.doclegis:/browser/vocabulary.py:70
+msgid "woluwesaintpierre"
+msgstr "Woluwe-Saint-Pierre"
+
+#: apl.doclegis:/content/doclegis.py:107
+#: apl.doclegis:/interfaces/doclegis.py:51
+msgid "Commune (si applicable)"
+msgstr "Commune (si applicable)"
+
+#: apl.doclegis:/content/doclegis.py:118
+#: apl.doclegis:/interfaces/doclegis.py:57
+msgid "Url ou se trouve le document"
+msgstr "Url où se trouve le document"
+
+#: apl.doclegis:/content/doclegis.py:128
+#: apl.doclegis:/interfaces/doclegis.py:63
+msgid "Fichier a attacher"
+msgstr "Fichier à attacher"
+
+#: apl.doclegis:/content/doclegis.py:28
+#: apl.doclegis:/interfaces/doclegis.py:27
+msgid "Corps de texte"
+msgstr "Corps de texte"
+
+#: apl.doclegis:/content/doclegis.py:38
+#: apl.doclegis:/interfaces/doclegis.py:33
+msgid "Type de document"
+msgstr "Type de document"
+
+#: apl.doclegis:/content/doclegis.py:49
+#: apl.doclegis:/interfaces/doclegis.py:21
+msgid "Date"
+msgstr "Date"
+
+#: apl.doclegis:/content/doclegis.py:50 apl.doclegis:/content/doclegis.py:71
+msgid "jj/mm/aaaa"
+msgstr "jj/mm/aaaa"
+
+#: apl.doclegis:/content/doclegis.py:61
+#: apl.doclegis:/interfaces/doclegis.py:15
+msgid "Numero ou ID"
+msgstr "Numéro ou ID"
+
+#: apl.doclegis:/content/doclegis.py:70
+msgid "Date de publication au moniteur si connue"
+msgstr "Date de publication au moniteur si connue"
+
+#: apl.doclegis:/content/doclegis.py:83
+#: apl.doclegis:/interfaces/doclegis.py:39
+msgid "Institution(s)"
+msgstr "Institution(s)"
+
+#: apl.doclegis:/content/doclegis.py:95
+#: apl.doclegis:/interfaces/doclegis.py:45
+msgid "Theme(s)"
+msgstr "Theme(s)"
+
+#: apl.doclegis:/interfaces/doclegis.py:47
+#: apl.doclegis:/interfaces/doclegis.py:65
+msgid "Field description"
+msgstr ""
+
+#~ msgid "Communes"
+#~ msgstr "Communes"
+
+#~ msgid "CPAS"
+#~ msgstr "CPAS"
+
+#~ msgid "Cultes et laicite"
+#~ msgstr "Cultes et laicité"
+
+#~ msgid "Intercommunales"
+#~ msgstr "Intercommunales"
+
+#~ msgid "Regies communales"
+#~ msgstr "Régies communales"
+
+#~ msgid "Zones de police"
+#~ msgstr "Zones de police"
+
+#~ msgid "Le Mont-de-Piete"
+#~ msgstr "Le Mont-de-Piété"
+
+#~ msgid "Les associations Chapitre XII"
+#~ msgstr "Les associations Chapitre XII"
+
+#~ msgid "Le reseau hospitalier IRIS"
+#~ msgstr "Le réseau hospitalier IRIS"
+
+#~ msgid "Elections"
+#~ msgstr "Elections"
+
+#~ msgid "Fiscalite"
+#~ msgstr "Fiscalité"
+
+#~ msgid "Marches publics"
+#~ msgstr "Marches publics"
+
+#~ msgid "Soutien financier"
+#~ msgstr "Soutien financier"
+
+#~ msgid "Egalite des chances et diversite"
+#~ msgstr "Egalite des chances et diversité"
+
+#~ msgid "Finances"
+#~ msgstr "Finances"
+
+#~ msgid "International"
+#~ msgstr "International"
+
+#~ msgid "Personnel"
+#~ msgstr "Personnel"
+
+#~ msgid "Anderlecht"
+#~ msgstr "Anderlecht"
+
+#~ msgid "Auderghem"
+#~ msgstr "Auderghem"
+
+#~ msgid "Berchem-Sainte-Agathe"
+#~ msgstr "Berchem-Sainte-Agathe"
+
+#~ msgid "Bruxelles-Ville"
+#~ msgstr "Bruxelles-Ville"
+
+#~ msgid "Etterbeek"
+#~ msgstr "Etterbeek"
+
+#~ msgid "Evere"
+#~ msgstr "Evere"
+
+#~ msgid "Forest"
+#~ msgstr "Forest"
+
+#~ msgid "Ganshoren"
+#~ msgstr "Ganshoren"
+
+#~ msgid "Ixelles"
+#~ msgstr "Ixelles"
+
+#~ msgid "Jette"
+#~ msgstr "Jette"
+
+#~ msgid "Koekelberg"
+#~ msgstr "Koekelberg"
+
+#~ msgid "Molenbeek-Saint-Jean"
+#~ msgstr "Molenbeek-Saint-Jean"
+
+#~ msgid "Saint-Gilles"
+#~ msgstr "Saint-Gilles"
+
+#~ msgid "Saint-Josse-ten-Noode"
+#~ msgstr "Saint-Josse-ten-Noode"
+
+#~ msgid "Schaerbeek"
+#~ msgstr "Schaerbeek"
+
+#~ msgid "Uccle"
+#~ msgstr "Uccle"
+
+#~ msgid "Watermael-Boitsfort"
+#~ msgstr "Watermael-Boitsfort"
+
+#~ msgid "Woluwe-Saint-Lambert"
+#~ msgstr "Woluwe-Saint-Lambert"
+
+#~ msgid "Woluwe-Saint-Pierre"
+#~ msgstr "Woluwe-Saint-Pierre"
+
+#~ msgid "Loi"
+#~ msgstr "Loi"
+
+#~ msgid "Ordonnance"
+#~ msgstr "Ordonnance"
+
+#~ msgid "Arrete royal"
+#~ msgstr "Arrêté royal"
+
+#~ msgid "Arrete gouvernement"
+#~ msgstr "Arrêté gouvernement"
+
+#~ msgid "Circulaire"
+#~ msgstr "Circulaire"
+
+#~ msgid "Reglement"
+#~ msgstr "Réglement"

@@ -147,10 +147,11 @@ $(document).ready(function() {
     	function () {
     		val = $(this).val();
             oTable.fnFilter(val, 5 );
-            if (val == "Communes" ||  val == "CPAS"
+            if (val == "Communes" ||  val == "CPAS" ||
+            	val == 'Gemeenten' || val == "OCMW"
             	){
             	$('#spantohid').show();
-            }else {
+            } else {
             	$('#spantohid').hide();
             }
      	}

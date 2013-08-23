@@ -29,10 +29,12 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
         ),
     ),
 
-    atapi.StringField(
+    atapi.TextField(
         'text',
         storage=atapi.AnnotationStorage(),
-        widget=atapi.TextAreaWidget(
+        allowable_content_types=('text/html',),
+        default_output_type='text/html',
+        widget=atapi.RichWidget(
             label=_(u"Corps de texte"),
             description=_(u""),
         ),

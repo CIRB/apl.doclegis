@@ -55,9 +55,9 @@ $.fn.dataTableExt.oApi.fnGetColumnData = function ( oSettings, iColumn, bUnique,
 }}(jQuery));
 
 
-function fnCreateSelect( aData )
+function fnCreateSelect( aData , empty)
 {
-    var r='<select><option value=""></option>', i, iLen=aData.length;
+    var r='<select><option value="">'+empty+'</option>', i, iLen=aData.length;
     for ( i=0 ; i<iLen ; i++ )
     {
         r += '<option value="'+aData[i]+'">'+aData[i]+'</option>';
@@ -98,19 +98,23 @@ function getListValue(numcols) {
 }
 
 $(document).ready(function() {
+    var lang = $('html').attr('lang');
     /* Initialise the DataTable */
     oTable = $('#doclegisTable').dataTable( {
         "oLanguage": {
-            "sUrl": "++resource++doclegis/datatables_"+$('html').attr('lang')+""
+            "sUrl": "++resource++doclegis/datatables_"+lang+""
         },
         "aoColumnDefs": [
         	{"bVisible": false, "aTargets": [3, 4, 5, 6]},
         ],
     });
 
-
+    var tous = ["Tous ...", "Alles ..."];
+    var toutes = ["Toutes ...", "Alles ..."];
+    var numlang = 0;
+    if (lang == "nl"){numlang = 1;}
     $('div#filter_document_type').html(
-    	fnCreateSelect( oTable.fnGetColumnData(1) ));
+    	fnCreateSelect( oTable.fnGetColumnData(1), tous[numlang] ));
     $('select', 'div#filter_document_type').change(
     	function () {
             oTable.fnFilter( $(this).val(), 1 );
@@ -118,7 +122,7 @@ $(document).ready(function() {
      );
 
     $('div#filter_theme').html(
-    	fnCreateSelect( getListValue(4) ));
+    	fnCreateSelect( getListValue(4), tous[numlang]  ));
     $('select', 'div#filter_theme').change(
     	function () {
             oTable.fnFilter( $(this).val(), 4 );
@@ -126,7 +130,7 @@ $(document).ready(function() {
      );
 
     $('div#filter_year').html(
-    	fnCreateSelect( oTable.fnGetColumnData(3) ));
+    	fnCreateSelect( oTable.fnGetColumnData(3), toutes[numlang] ));
     $('select', 'div#filter_year').change(
     	function () {
             oTable.fnFilter( $(this).val(), 3 );
@@ -134,7 +138,7 @@ $(document).ready(function() {
      );
 
     $('div#filter_institution').html(
-    	fnCreateSelect( getListValue(5) ));
+    	fnCreateSelect( getListValue(5), toutes[numlang]));
     $('select', 'div#filter_institution').change(
     	function () {
     		val = $(this).val();
@@ -151,7 +155,7 @@ $(document).ready(function() {
     $('#spantohid').hide();
 
     $('div#filter_commune').html(
-    	fnCreateSelect( getListValue(6) ));
+    	fnCreateSelect( getListValue(6), toutes[numlang]  ));
     $('select', 'div#filter_commune').change(
     	function () {
             oTable.fnFilter( $(this).val(), 6 );

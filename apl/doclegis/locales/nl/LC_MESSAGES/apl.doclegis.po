@@ -49,7 +49,7 @@ msgstr "Regeringsbesluit"
 
 #: apl.doclegis:/browser/vocabulary.py:18
 msgid "arreteministerie"
-msgstr ""
+msgstr "Ministerieel besluit"
 
 #: apl.doclegis:/browser/vocabulary.py:19
 msgid "circulaire"

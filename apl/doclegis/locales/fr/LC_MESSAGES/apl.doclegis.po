@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: Thu Aug 22 15:49:15 2013\n"
+"POT-Creation-Date: Fri Aug 23 13:32:38 2013\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope-dev@zope.org>\n"
@@ -31,172 +31,176 @@ msgstr "Institution"
 msgid "commune"
 msgstr "Commune"
 
-#: apl.doclegis:/browser/vocabulary.py:17
+#: apl.doclegis:/browser/vocabulary.py:14
 msgid "loi"
 msgstr "Loi"
 
-#: apl.doclegis:/browser/vocabulary.py:18
+#: apl.doclegis:/browser/vocabulary.py:15
 msgid "ordonnance"
 msgstr "Ordonnance"
 
-#: apl.doclegis:/browser/vocabulary.py:19
+#: apl.doclegis:/browser/vocabulary.py:16
 msgid "arreteroyal"
 msgstr "Arrêté royal"
 
-#: apl.doclegis:/browser/vocabulary.py:20
+#: apl.doclegis:/browser/vocabulary.py:17
 msgid "arretegouvernement"
 msgstr "Arrêté gouvernement"
 
-#: apl.doclegis:/browser/vocabulary.py:21
+#: apl.doclegis:/browser/vocabulary.py:18
+msgid "arreteministerie"
+msgstr "Arrêté ministériel"
+
+#: apl.doclegis:/browser/vocabulary.py:19
 msgid "circulaire"
 msgstr "Circulaire"
 
-#: apl.doclegis:/browser/vocabulary.py:22
+#: apl.doclegis:/browser/vocabulary.py:20
 msgid "reglement"
 msgstr "Règlement"
 
-#: apl.doclegis:/browser/vocabulary.py:26
+#: apl.doclegis:/browser/vocabulary.py:24
 msgid "communes"
 msgstr "Communes"
 
-#: apl.doclegis:/browser/vocabulary.py:27
+#: apl.doclegis:/browser/vocabulary.py:25
 msgid "cpas"
 msgstr "CPAS"
 
-#: apl.doclegis:/browser/vocabulary.py:28
-#: apl.doclegis:/browser/vocabulary.py:40
+#: apl.doclegis:/browser/vocabulary.py:26
+#: apl.doclegis:/browser/vocabulary.py:38
 msgid "cultesetlaicite"
 msgstr "Cultes et laicïté"
 
-#: apl.doclegis:/browser/vocabulary.py:29
+#: apl.doclegis:/browser/vocabulary.py:27
 msgid "intercommunales"
 msgstr "Intercommunales"
 
-#: apl.doclegis:/browser/vocabulary.py:30
+#: apl.doclegis:/browser/vocabulary.py:28
 msgid "regiescommunales"
 msgstr "Régies communales"
 
-#: apl.doclegis:/browser/vocabulary.py:31
+#: apl.doclegis:/browser/vocabulary.py:29
 msgid "zonesdepolice"
 msgstr "Zones de police"
 
-#: apl.doclegis:/browser/vocabulary.py:32
+#: apl.doclegis:/browser/vocabulary.py:30
 msgid "lemontdepiete"
 msgstr "Le Mont-de-Piété"
 
-#: apl.doclegis:/browser/vocabulary.py:34
+#: apl.doclegis:/browser/vocabulary.py:32
 msgid "lesassociationschapitrexii"
 msgstr "Le réseau hospitalier IRIS"
 
-#: apl.doclegis:/browser/vocabulary.py:36
+#: apl.doclegis:/browser/vocabulary.py:34
 msgid "lereseauhospitalieriris"
 msgstr "Les associations Chapitre XII"
 
-#: apl.doclegis:/browser/vocabulary.py:41
+#: apl.doclegis:/browser/vocabulary.py:39
 msgid "elections"
 msgstr "Elections"
 
-#: apl.doclegis:/browser/vocabulary.py:42
+#: apl.doclegis:/browser/vocabulary.py:40
 msgid "fiscalite"
 msgstr "Fiscalité"
 
-#: apl.doclegis:/browser/vocabulary.py:43
+#: apl.doclegis:/browser/vocabulary.py:41
 msgid "marchespublics"
 msgstr "Marchés publics"
 
-#: apl.doclegis:/browser/vocabulary.py:44
+#: apl.doclegis:/browser/vocabulary.py:42
 msgid "soutienfinancier"
 msgstr "Soutien financier"
 
-#: apl.doclegis:/browser/vocabulary.py:45
+#: apl.doclegis:/browser/vocabulary.py:43
 msgid "egalitedeschancesetdiversite"
 msgstr "Egalité des chances et diversité"
 
-#: apl.doclegis:/browser/vocabulary.py:46
+#: apl.doclegis:/browser/vocabulary.py:44
 msgid "finances"
 msgstr "Finances"
 
-#: apl.doclegis:/browser/vocabulary.py:47
+#: apl.doclegis:/browser/vocabulary.py:45
 msgid "international"
 msgstr "International"
 
-#: apl.doclegis:/browser/vocabulary.py:48
+#: apl.doclegis:/browser/vocabulary.py:46
 msgid "personnel"
 msgstr "Personnel"
 
-#: apl.doclegis:/browser/vocabulary.py:52
+#: apl.doclegis:/browser/vocabulary.py:50
 msgid "anderlecht"
 msgstr "Anderlecht"
 
-#: apl.doclegis:/browser/vocabulary.py:53
+#: apl.doclegis:/browser/vocabulary.py:51
 msgid "auderghem"
 msgstr "Auderghem"
 
-#: apl.doclegis:/browser/vocabulary.py:54
+#: apl.doclegis:/browser/vocabulary.py:52
 msgid "berchemsainteagathe"
 msgstr "Berchem-Sainte-Agathe"
 
-#: apl.doclegis:/browser/vocabulary.py:55
+#: apl.doclegis:/browser/vocabulary.py:53
 msgid "bruxellesville"
 msgstr "Bruxelles-Ville"
 
-#: apl.doclegis:/browser/vocabulary.py:56
+#: apl.doclegis:/browser/vocabulary.py:54
 msgid "etterbeek"
 msgstr "Etterbeek"
 
-#: apl.doclegis:/browser/vocabulary.py:57
+#: apl.doclegis:/browser/vocabulary.py:55
 msgid "evere"
 msgstr "Evere"
 
-#: apl.doclegis:/browser/vocabulary.py:58
+#: apl.doclegis:/browser/vocabulary.py:56
 msgid "forest"
 msgstr "Forest"
 
-#: apl.doclegis:/browser/vocabulary.py:59
+#: apl.doclegis:/browser/vocabulary.py:57
 msgid "ganshoren"
 msgstr "Ganshoren"
 
-#: apl.doclegis:/browser/vocabulary.py:60
+#: apl.doclegis:/browser/vocabulary.py:58
 msgid "ixelles"
 msgstr "Ixelles"
 
-#: apl.doclegis:/browser/vocabulary.py:61
+#: apl.doclegis:/browser/vocabulary.py:59
 msgid "jette"
 msgstr "Jette"
 
-#: apl.doclegis:/browser/vocabulary.py:62
+#: apl.doclegis:/browser/vocabulary.py:60
 msgid "koekelberg"
 msgstr "Koekelberg"
 
-#: apl.doclegis:/browser/vocabulary.py:63
+#: apl.doclegis:/browser/vocabulary.py:61
 msgid "molenbeeksaintjean"
 msgstr "Molenbeek-Saint-Jean"
 
-#: apl.doclegis:/browser/vocabulary.py:64
+#: apl.doclegis:/browser/vocabulary.py:62
 msgid "saintgilles"
 msgstr "Saint-Gilles"
 
-#: apl.doclegis:/browser/vocabulary.py:65
+#: apl.doclegis:/browser/vocabulary.py:63
 msgid "saintjossetennoode"
 msgstr "Saint-Josse-ten-Noode"
 
-#: apl.doclegis:/browser/vocabulary.py:66
+#: apl.doclegis:/browser/vocabulary.py:64
 msgid "schaerbeek"
 msgstr "Schaerbeek"
 
-#: apl.doclegis:/browser/vocabulary.py:67
+#: apl.doclegis:/browser/vocabulary.py:65
 msgid "uccle"
 msgstr "Uccle"
 
-#: apl.doclegis:/browser/vocabulary.py:68
+#: apl.doclegis:/browser/vocabulary.py:66
 msgid "watermaelboitsfort"
 msgstr "Watermael-Boitsfort"
 
-#: apl.doclegis:/browser/vocabulary.py:69
+#: apl.doclegis:/browser/vocabulary.py:67
 msgid "woluwesaintlambert"
 msgstr "Woluwe-Saint-Lambert"
 
-#: apl.doclegis:/browser/vocabulary.py:70
+#: apl.doclegis:/browser/vocabulary.py:68
 msgid "woluwesaintpierre"
 msgstr "Woluwe-Saint-Pierre"
 
@@ -215,29 +219,29 @@ msgstr "Url où se trouve le document"
 msgid "Fichier a attacher"
 msgstr "Fichier à attacher"
 
-#: apl.doclegis:/content/doclegis.py:28
+#: apl.doclegis:/content/doclegis.py:27
+#: apl.doclegis:/interfaces/doclegis.py:15
+msgid "Numero ou ID"
+msgstr "Numéro ou ID"
+
+#: apl.doclegis:/content/doclegis.py:36
 #: apl.doclegis:/interfaces/doclegis.py:27
 msgid "Corps de texte"
 msgstr "Corps de texte"
 
-#: apl.doclegis:/content/doclegis.py:38
+#: apl.doclegis:/content/doclegis.py:46
 #: apl.doclegis:/interfaces/doclegis.py:33
 msgid "Type de document"
 msgstr "Type de document"
 
-#: apl.doclegis:/content/doclegis.py:49
+#: apl.doclegis:/content/doclegis.py:57
 #: apl.doclegis:/interfaces/doclegis.py:21
 msgid "Date"
 msgstr "Date"
 
-#: apl.doclegis:/content/doclegis.py:50 apl.doclegis:/content/doclegis.py:71
+#: apl.doclegis:/content/doclegis.py:58 apl.doclegis:/content/doclegis.py:71
 msgid "jj/mm/aaaa"
 msgstr "jj/mm/aaaa"
-
-#: apl.doclegis:/content/doclegis.py:61
-#: apl.doclegis:/interfaces/doclegis.py:15
-msgid "Numero ou ID"
-msgstr "Numéro ou ID"
 
 #: apl.doclegis:/content/doclegis.py:70
 msgid "Date de publication au moniteur si connue"

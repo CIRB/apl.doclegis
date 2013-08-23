@@ -4,7 +4,7 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Renamed js and css.
 
 
 1.0.1 (2013-08-22)

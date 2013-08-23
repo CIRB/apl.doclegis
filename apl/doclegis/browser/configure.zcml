@@ -34,6 +34,15 @@
       permission="zope.Public"
       />
 
+  <browser:page
+      for="*"
+      name="doclegis_simple_view"
+      class=".doclegisview.DocLegisSimpleView"
+      template="doclegissimpleview.pt"
+      allowed_interface=".doclegisview.IDocLegisSimpleView"
+      permission="zope.Public"
+      />
+
   <browser:resourceDirectory
         name="doclegis"
         directory="static"

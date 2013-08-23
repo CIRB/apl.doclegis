@@ -76,3 +76,78 @@ class DocLegisView(BrowserView):
                     'absolute_url': doclegis.absolute_url,
                 })
         return results
+
+
+class IDocLegisSimpleView(Interface):
+
+    """
+    DocLegis view interface
+    """
+
+    def get_doclegis():
+        """ test method"""
+
+
+class DocLegisSimpleView(BrowserView):
+
+    """
+    DocLegis browser view
+    """
+    implements(IDocLegisSimpleView)
+
+    def __init__(self, context, request):
+        self.context = context
+        self.request = request
+
+    @property
+    def portal_catalog(self):
+        return getToolByName(self.context, 'portal_catalog')
+
+    @property
+    def portal(self):
+        return getToolByName(self.context, 'portal_url').getPortalObject()
+
+    def get_date(self):
+        formated_date = self.context.getDate().strftime('%d/%m/%Y')
+        # year = self.context.date.strftime('%Y')
+        return formated_date
+
+    def get_datepublication(self):
+        date = self.context.getDatepublication()
+        if date:
+            formated_date = date.strftime('%d/%m/%Y')
+            return formated_date
+        else:
+            return ''
+
+    def get_documenttype(self):
+        msgid = _(self.context.document_type)
+        document_type = self.context.translate(msgid)
+        return document_type
+
+    def get_themes(self):
+        trans_theme = []
+        for theme in self.context.theme:
+            msgid = _(theme)
+            trans_theme.append(self.context.translate(msgid))
+        return ", ".join(trans_theme)
+
+    def get_inst(self):
+        trans_institution = []
+        for institution in self.context.institution:
+            msgid = _(institution)
+            trans_institution.append(self.context.translate(msgid))
+        return ", ".join(trans_institution)
+
+    def get_communes(self):
+        trans_commune = []
+        for commune in self.context.commune:
+            msgid = _(commune)
+            trans_commune.append(self.context.translate(msgid))
+        return ", ".join(trans_commune)
+
+    def get_fichier(self):
+        html = []
+        #file_size
+        # download_url fieldname filename filename_encoded
+        return " ".join(html)

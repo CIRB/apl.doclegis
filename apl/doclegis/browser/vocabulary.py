@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-from zope.schema.vocabulary import SimpleVocabulary
-import zope.interface
-from z3c.form import interfaces
 from apl.doclegis import doclegisMessageFactory as _
 from Products.Archetypes.utils import DisplayList
 
@@ -18,6 +15,7 @@ TYPE = create_dl([
     ('ordonnance', _(u'ordonnance')),
     ('arreteroyal', _(u'arreteroyal')),
     ('arretegouvernement', _(u'arretegouvernement')),
+    ('arreteministeriel', _(u'arreteministerie')),
     ('circulaire', _(u'circulaire')),
     ('reglement', _(u'reglement')),
 ])

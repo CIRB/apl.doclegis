@@ -212,17 +212,17 @@ msgstr "Commune (si applicable)"
 #: apl.doclegis:/content/doclegis.py:118
 #: apl.doclegis:/interfaces/doclegis.py:57
 msgid "Url ou se trouve le document"
-msgstr "Url où se trouve le document"
+msgstr "Url (adresse du site web où se trouve le document)"
 
 #: apl.doclegis:/content/doclegis.py:128
 #: apl.doclegis:/interfaces/doclegis.py:63
 msgid "Fichier a attacher"
-msgstr "Fichier à attacher"
+msgstr "Fichier"
 
 #: apl.doclegis:/content/doclegis.py:27
 #: apl.doclegis:/interfaces/doclegis.py:15
 msgid "Numero ou ID"
-msgstr "Numéro ou ID"
+msgstr "Numéro ou ID (si connu)"
 
 #: apl.doclegis:/content/doclegis.py:36
 #: apl.doclegis:/interfaces/doclegis.py:27
@@ -241,11 +241,11 @@ msgstr "Date"
 
 #: apl.doclegis:/content/doclegis.py:58 apl.doclegis:/content/doclegis.py:71
 msgid "jj/mm/aaaa"
-msgstr "jj/mm/aaaa"
+msgstr " "
 
 #: apl.doclegis:/content/doclegis.py:70
 msgid "Date de publication au moniteur si connue"
-msgstr "Date de publication au moniteur si connue"
+msgstr "Date de publication au moniteur (si connue)"
 
 #: apl.doclegis:/content/doclegis.py:83
 #: apl.doclegis:/interfaces/doclegis.py:39

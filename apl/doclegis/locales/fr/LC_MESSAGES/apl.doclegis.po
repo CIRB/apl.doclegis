@@ -227,7 +227,7 @@ msgstr "Numéro ou ID"
 #: apl.doclegis:/content/doclegis.py:36
 #: apl.doclegis:/interfaces/doclegis.py:27
 msgid "Corps de texte"
-msgstr "Corps de texte"
+msgstr "Corps du texte"
 
 #: apl.doclegis:/content/doclegis.py:46
 #: apl.doclegis:/interfaces/doclegis.py:33

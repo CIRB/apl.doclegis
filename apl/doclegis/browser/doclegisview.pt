@@ -41,13 +41,13 @@
 
 			<table id="doclegisTable">
 				<thead>
-					<th>Titre</th>
-					<th>Type</th>
-					<th>Date</th>
-					<th>Année 3</th>
-					<th>Theme 4</th>
-					<th>Institution 5</th>
-					<th>Commune 6</th>
+					<th i18n:translate="Title" >Titre</th>
+					<th i18n:translate="Type">Type</th>
+					<th i18n:translate="Date">Date</th>
+					<th i18n:translate="Annee">Année</th>
+					<th i18n:translate="Theme">Theme</th>
+					<th i18n:translate="Institution">Institution</th>
+					<th i18n:translate="Commune">Commune</th>
 				</thead>
 				<tr tal:repeat="doclegis view/get_doclegis">
 					<td>

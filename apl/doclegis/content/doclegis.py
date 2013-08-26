@@ -95,7 +95,7 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
 
     atapi.StringField(
         'theme',
-        vocabulary='_themeVocabulary',
+        vocabulary=vocabulary.THEMES,
         storage=atapi.AnnotationStorage(),
         widget=atapi.MultiSelectionWidget(
             label=_(u"Theme(s)"),

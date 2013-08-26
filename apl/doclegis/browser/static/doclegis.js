@@ -57,6 +57,7 @@ $.fn.dataTableExt.oApi.fnGetColumnData = function ( oSettings, iColumn, bUnique,
 
 function fnCreateSelect( aData , empty)
 {
+    aData.sort();
     var r='<select><option value="">'+empty+'</option>', i, iLen=aData.length;
     for ( i=0 ; i<iLen ; i++ )
     {
@@ -66,10 +67,7 @@ function fnCreateSelect( aData , empty)
 }
 
 function eliminateDuplicates(arr) {
-  var i,
-      len=arr.length,
-      out=[],
-      obj={};
+  var i, len=arr.length, out=[], obj={};
 
   for (i=0;i<len;i++) {
     obj[arr[i]]=0;
@@ -77,7 +75,7 @@ function eliminateDuplicates(arr) {
   for (i in obj) {
     out.push(i);
   }
-  return out;
+  return out.sort();
 }
 
 function getListValue(numcols) {

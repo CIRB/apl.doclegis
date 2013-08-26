@@ -5,6 +5,8 @@
 
 from zope.interface import implements
 
+from DateTime.DateTime import DateTime
+
 from Products.Archetypes import atapi
 from Products.ATContentTypes.content import base
 from Products.ATContentTypes.content import schemata
@@ -61,6 +63,8 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
             show_hm=False,
             starting_year=1830,
         ),
+
+        default_method='getDefaultTime',
         validators=('isValidDate'),
     ),
 
@@ -172,7 +176,7 @@ class DocLegis(base.ATCTContent):
 
     document_type = atapi.ATFieldProperty('document_type')
 
-    def _themeVocabulary(self):
-        return Vocabulary(vocabulary.THEMES, self, 'apl.doclegis')
+    def getDefaultTime(self):  # function to return the current date and time
+        return DateTime()
 
 atapi.registerType(DocLegis, PROJECTNAME)

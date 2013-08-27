@@ -4,7 +4,9 @@ Changelog
 1.0.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- added class to H1
+- added classes to all divs
+- changed order of div Numero ou ID 
 
 
 1.0.6 (2013-08-26)

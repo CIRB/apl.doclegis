@@ -5,38 +5,39 @@
 <body>
     <div metal:fill-slot="main">
         <tal:main-macro metal:define-macro="main">
-        	<h1 tal:content="context/title">title</h1>
+        	<h1 tal:content="context/title" class="documentFirstHeading">title</h1>
 
             <div class="doclegis_label dl-description" i18n:translate="description"></div>
-            <div tal:content="context/description">desc</div>
-
-            <div class="doclegis_label dl-numero" i18n:translate="Numero ou ID"></div>
-            <div tal:content="context/numero">id</div>
+            <div tal:content="context/description" class="dl-description-div">desc</div>
 
             <div class="doclegis_label dl-text" i18n:translate="Corps de texte"></div>
-            <div tal:content="structure context/text">text</div>
+            <div tal:content="structure context/text" class="dl-text-div">text</div>
 
             <div class="doclegis_label dl-documenttype" i18n:translate="Type de document"></div>
-			<div tal:content="view/get_documenttype">type</div>
+			<div tal:content="view/get_documenttype" class="dl-documenttype-div">type</div>
+
+            <div class="doclegis_label dl-numero" i18n:translate="Numero ou ID"></div>
+            <div tal:content="context/numero" class="dl-numero-div">id</div>
             
             <div class="doclegis_label dl-date" i18n:translate="Date"></div>
- 			<div tal:content="view/get_date">date</div>
+ 			<div tal:content="view/get_date" class="dl-date-div">date</div>
 
             <div class="doclegis_label dl-datepublication" i18n:translate="Date de publication au moniteur si connue"></div>
-            <div tal:content="view/get_datepublication">desc</div>
+            <div tal:content="view/get_datepublication" class="dl-datepublication-div">desc</div>
 
             <div class="doclegis_label dl-institution" i18n:translate="Institution(s)"></div>
-			<div tal:content="view/get_inst">institution</div>
+			<div tal:content="view/get_inst" class="dl-institution-div">institution</div>
 
             <div class="doclegis_label dl-themes" i18n:translate="Theme(s)"></div>
-		    <div tal:content="view/get_themes">theme</div>
+		    <div tal:content="view/get_themes" class="dl-themes-div">theme</div>
 
             <div class="doclegis_label dl-communes" i18n:translate="Commune (si applicable)"></div>  
-			<div tal:content="view/get_communes">commune</div>
+			<div tal:content="view/get_communes" class="dl-communes-div">commune</div>
 
             <div class="doclegis_label dl-url" i18n:translate="Url ou se trouve le document"></div>
             <a href="" tal:attributes="href context/url" 
-                       tal:content="context/url" target="_blank">url</a>
+                       tal:content="context/url" target="_blank"
+                       class="dl-url-div">url</a>
 
             <div class="doclegis_label dl-fichier" i18n:translate="Fichier a attacher"></div>
             <!--div tal:content="view/get_fichier">fichier</div-->

@@ -4,7 +4,7 @@ Changelog
 1.0.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Load datatables only for #doclegisTable.
 
 
 1.0.7 (2013-08-27)

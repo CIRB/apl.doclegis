@@ -96,6 +96,7 @@ function getListValue(numcols) {
 }
 
 $(document).ready(function() {
+     if ($('table#doclegisTable').length==0){return}
     var lang = $('html').attr('lang');
     /* Initialise the DataTable */
     oTable = $('#doclegisTable').dataTable( {

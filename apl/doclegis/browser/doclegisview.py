@@ -108,7 +108,7 @@ class DocLegisSimpleView(BrowserView):
         return getToolByName(self.context, 'portal_url').getPortalObject()
 
     def get_date(self):
-        temp_date = self.context.getDate()
+        date = self.context.getDate()
         formated_date = "{0}/{1}/{2}".format(date.day(), date.month(), date.year())
         return formated_date
 

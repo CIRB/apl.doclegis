@@ -4,7 +4,7 @@ Changelog
 1.0.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Do not use strftime anymore.
 
 
 1.0.8 (2013-09-02)

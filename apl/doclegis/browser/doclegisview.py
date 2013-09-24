@@ -44,8 +44,8 @@ class DocLegisView(BrowserView):
                 formated_date = ''
                 year = ''
                 if date:
-                    formated_date = date.strftime('%d/%m/%Y')
-                    year = date.strftime('%Y')
+                    formated_date = "{0}/{1}/{2}".format(date.day(), date.month(), date.year())
+                    year = date.year()
                 msgid = _(doclegis.document_type)
                 document_type = self.context.translate(msgid)
 
@@ -108,14 +108,14 @@ class DocLegisSimpleView(BrowserView):
         return getToolByName(self.context, 'portal_url').getPortalObject()
 
     def get_date(self):
-        formated_date = self.context.getDate().strftime('%d/%m/%Y')
-        # year = self.context.date.strftime('%Y')
+        temp_date = self.context.getDate()
+        formated_date = "{0}/{1}/{2}".format(date.day(), date.month(), date.year())
         return formated_date
 
     def get_datepublication(self):
         date = self.context.getDatepublication()
         if date:
-            formated_date = date.strftime('%d/%m/%Y')
+            formated_date = "{0}/{1}/{2}".format(date.day(), date.month(), date.year())
             return formated_date
         else:
             return ''

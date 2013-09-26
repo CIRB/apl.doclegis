@@ -101,11 +101,11 @@ $(document).ready(function() {
     /* Initialise the DataTable */
     oTable = $('#doclegisTable').dataTable( {
         "oLanguage": {
-            "sUrl": "++resource++doclegis/datatables_"+lang+""
+            "sUrl": "@@collective.js.datatables.translation"
         },
         "aoColumnDefs": [
-        	{"bVisible": false, "aTargets": [3, 4, 5, 6]},
-        ],
+        	{"bVisible": false, "aTargets": [3, 4, 5, 6]}
+        ]
     });
 
     var tous = ["Tous ...", "Alles ..."];

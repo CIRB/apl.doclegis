@@ -41,11 +41,13 @@ class DocLegisView(BrowserView):
         for doclegis in self.context.contentValues():
             if doclegis.getPortalTypeName() == "DocLegis":
                 date = doclegis.date
+                publication_date = doclegis.getDatepublication()
                 formated_date = ''
                 year = ''
                 if date:
                     formated_date = "{0}/{1}/{2}".format(date.day(), date.month(), date.year())
-                    year = date.year()
+                if publication_date:
+                    year = publication_date.year()
                 msgid = _(doclegis.document_type)
                 document_type = self.context.translate(msgid)
 

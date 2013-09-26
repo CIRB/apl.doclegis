@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.0.11 (unreleased)
--------------------
+1.1.0 (2013-09-26)
+------------------
 
 - Add subsciber, after creation of a doclegis, this one is exclude from nav.
 - Delete a coma in javascipt for a IE8 bug.

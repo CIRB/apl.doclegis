@@ -13,4 +13,7 @@
         />
   </class>
 
+  <subscriber for="apl.doclegis.interfaces.IDocLegis
+      Products.Archetypes.interfaces.IObjectInitializedEvent"
+      handler="apl.doclegis.content.doclegis.exclude_from_nav" />
 </configure>

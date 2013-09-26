@@ -180,3 +180,7 @@ class DocLegis(base.ATCTContent):
         return DateTime()
 
 atapi.registerType(DocLegis, PROJECTNAME)
+
+
+def exclude_from_nav(obj, event):
+    obj.setExcludeFromNav(True)

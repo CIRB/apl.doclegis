@@ -61,7 +61,7 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
             label=_(u"Date"),
             description=_(u"jj/mm/aaaa"),
             show_hm=False,
-            starting_year=1830,
+            starting_year=1789,
         ),
 
         default_method='getDefaultTime',
@@ -76,8 +76,9 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
             label=_(u"Date de publication au moniteur si connue"),
             description=_(u"jj/mm/aaaa"),
             show_hm=False,
-            starting_year=1830,
+            starting_year=1789,
         ),
+        default_method='getDefaultTime',
         validators=('isValidDate'),
     ),
 

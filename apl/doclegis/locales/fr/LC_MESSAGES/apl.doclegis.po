@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: Mon Aug 26 09:08:18 2013\n"
+"POT-Creation-Date: Fri Sep 27 10:58:05 2013\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope-dev@zope.org>\n"
@@ -13,7 +13,6 @@ msgstr ""
 
 #. Default: ""
 #: apl.doclegis:/browser/doclegissimpleview.pt:10
-#: apl.doclegis:/browser/doclegissimpleview.pt:19
 msgid "description"
 msgstr ""
 
@@ -80,7 +79,7 @@ msgid "arretegouvernement"
 msgstr "Arrêté gouvernement"
 
 #: apl.doclegis:/browser/vocabulary.py:18
-msgid "arreteministerie"
+msgid "arreteministeriel"
 msgstr "Arrêté ministériel"
 
 #: apl.doclegis:/browser/vocabulary.py:19
@@ -236,73 +235,77 @@ msgstr "Woluwe-Saint-Lambert"
 msgid "woluwesaintpierre"
 msgstr "Woluwe-Saint-Pierre"
 
-#: apl.doclegis:/content/doclegis.py:109
+#: apl.doclegis:/content/doclegis.py:102
+#: apl.doclegis:/interfaces/doclegis.py:45
+#: apl.doclegis:/browser/doclegissimpleview.pt:31
+msgid "Theme(s)"
+msgstr "Theme(s)"
+
+#: apl.doclegis:/content/doclegis.py:114
 #: apl.doclegis:/interfaces/doclegis.py:51
 #: apl.doclegis:/browser/doclegissimpleview.pt:34
 msgid "Commune (si applicable)"
 msgstr "Commune (si applicable)"
 
-#: apl.doclegis:/content/doclegis.py:120
+#: apl.doclegis:/content/doclegis.py:125
 #: apl.doclegis:/interfaces/doclegis.py:57
 #: apl.doclegis:/browser/doclegissimpleview.pt:37
 msgid "Url ou se trouve le document"
 msgstr "Url (adresse du site web où se trouve le document)"
 
-#: apl.doclegis:/content/doclegis.py:130
+#: apl.doclegis:/content/doclegis.py:135
 #: apl.doclegis:/interfaces/doclegis.py:63
-#: apl.doclegis:/browser/doclegissimpleview.pt:41
+#: apl.doclegis:/browser/doclegissimpleview.pt:42
 msgid "Fichier a attacher"
 msgstr "Fichier"
 
-#: apl.doclegis:/content/doclegis.py:27
+#: apl.doclegis:/content/doclegis.py:29
 #: apl.doclegis:/interfaces/doclegis.py:15
-#: apl.doclegis:/browser/doclegissimpleview.pt:13
+#: apl.doclegis:/browser/doclegissimpleview.pt:19
 msgid "Numero ou ID"
 msgstr "Numéro ou ID (si connu)"
 
-#: apl.doclegis:/content/doclegis.py:38
+#: apl.doclegis:/content/doclegis.py:40
 #: apl.doclegis:/interfaces/doclegis.py:27
-#: apl.doclegis:/browser/doclegissimpleview.pt:16
+#: apl.doclegis:/browser/doclegissimpleview.pt:13
 msgid "Corps de texte"
 msgstr "Corps du texte"
 
-#: apl.doclegis:/content/doclegis.py:48
+#: apl.doclegis:/content/doclegis.py:50
 #: apl.doclegis:/interfaces/doclegis.py:33
+#: apl.doclegis:/browser/doclegissimpleview.pt:16
 msgid "Type de document"
 msgstr "Type de document"
 
-#: apl.doclegis:/content/doclegis.py:59
+#: apl.doclegis:/content/doclegis.py:61
 #: apl.doclegis:/interfaces/doclegis.py:21
 #: apl.doclegis:/browser/doclegissimpleview.pt:22
 #: apl.doclegis:/browser/doclegisview.pt:46
 msgid "Date"
 msgstr "Date"
 
-#: apl.doclegis:/content/doclegis.py:60 apl.doclegis:/content/doclegis.py:73
+#: apl.doclegis:/content/doclegis.py:62 apl.doclegis:/content/doclegis.py:77
 msgid "jj/mm/aaaa"
 msgstr " "
 
-#: apl.doclegis:/content/doclegis.py:72
+#: apl.doclegis:/content/doclegis.py:76
 #: apl.doclegis:/browser/doclegissimpleview.pt:25
 msgid "Date de publication au moniteur si connue"
 msgstr "Date de publication au moniteur (si connue)"
 
-#: apl.doclegis:/content/doclegis.py:85
+#: apl.doclegis:/content/doclegis.py:90
 #: apl.doclegis:/interfaces/doclegis.py:39
 #: apl.doclegis:/browser/doclegissimpleview.pt:28
 msgid "Institution(s)"
 msgstr "Institution(s)"
 
-#: apl.doclegis:/content/doclegis.py:97
-#: apl.doclegis:/interfaces/doclegis.py:45
-#: apl.doclegis:/browser/doclegissimpleview.pt:31
-msgid "Theme(s)"
-msgstr "Theme(s)"
-
 #: apl.doclegis:/interfaces/doclegis.py:47
 #: apl.doclegis:/interfaces/doclegis.py:65
 msgid "Field description"
 msgstr ""
+
+#~ msgid "arreteministerie"
+#~ msgstr "Arrêté ministériel"
 
 #~ msgid "Communes"
 #~ msgstr "Communes"

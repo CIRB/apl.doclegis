@@ -19,8 +19,8 @@
             <div class="doclegis_label dl-numero" i18n:translate="Numero ou ID"></div>
             <div tal:content="context/numero" class="dl-numero-div">id</div>
             
-            <div class="doclegis_label dl-date" i18n:translate="Date"></div>
- 			<div tal:content="view/get_date" class="dl-date-div">date</div>
+            <div class="doclegis_label dl-date" i18n:translate="Date">Date</div>
+ 			<div tal:content="view/get_date" class="dl-date-div">Date</div>
 
             <div class="doclegis_label dl-datepublication" i18n:translate="Date de publication au moniteur si connue"></div>
             <div tal:content="view/get_datepublication" class="dl-datepublication-div">desc</div>

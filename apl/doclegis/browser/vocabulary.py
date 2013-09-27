@@ -15,7 +15,7 @@ TYPE = create_dl([
     ('ordonnance', _(u'ordonnance')),
     ('arreteroyal', _(u'arreteroyal')),
     ('arretegouvernement', _(u'arretegouvernement')),
-    ('arreteministeriel', _(u'arreteministerie')),
+    ('arreteministeriel', _(u'arreteministeriel')),
     ('circulaire', _(u'circulaire')),
     ('reglement', _(u'reglement')),
 ])

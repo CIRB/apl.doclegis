@@ -4,7 +4,9 @@ Changelog
 1.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Date statring in 1789.
+- Prefilled publication date is today.
+- Use date for year research.
 
 
 1.1.1 (2013-09-26)

@@ -2,14 +2,86 @@ div#filter{
 	height: 75px;
 }
 
-#filter span, #filter span div {
-
-}
-
 #filter span {
 	float: left;
 }
 
 #doclegisTable {
 	clear: both;
+}
+
+/* Added by DBU */
+#content fieldset.formPanel, #content-core fieldset.formPanel {
+    width:98% !important;
+}
+#doclegis-base-edit label {
+    display: inline;
+} 
+#doclegis-base-edit input[type="checkbox"], #doclegis-base-edit input[type="radio"] {
+    margin-right: 1em;
+    margin-bottom: 7px;
+}
+#doclegis-base-edit input#url {
+    width:80%;
+}
+.formQuestion {
+    font-weight: bold;
+}
+.formQuestion.label {
+    background-color: #fff;
+    color: #4c4c4c;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 2px 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+#filter {
+    border-bottom:1px solid #ddd; margin-bottom:2em;
+}
+#filter > span, .plone_jscalendar > span select  {
+    width:20%;
+}
+#filter > span select {
+    width:95%;
+}
+#edit_form_date_0_day, #edit_form_datepublication_1_day {
+    width:100px;
+}
+#doclegisTable {
+    border:1px solid #ddd;
+}
+#doclegisTable_length select {
+    width:100px;
+    vertical-align:middle;
+}
+.doclegis_label {
+    font-weight:bold; 
+    margin-top:1.25em;
+}
+.dl-description {
+}
+.dl-numero {
+}
+.dl-text {
+    display:none;
+}
+.dl-documenttype {
+    border-top:1px solid #ddd;
+    padding-top:1em;
+}
+.dl-date {
+}
+.dl-datepublication {
+}
+.dl-institution {
+}
+.dl-themes {
+}
+.dl-communes {
+}
+.dl-url{
+}
+.dl-fichier {
 }

@@ -10,7 +10,6 @@ from DateTime.DateTime import DateTime
 from Products.Archetypes import atapi
 from Products.ATContentTypes.content import base
 from Products.ATContentTypes.content import schemata
-from Products.Archetypes.utils import Vocabulary
 
 # -*- Message Factory Imported Here -*-
 from apl.doclegis import doclegisMessageFactory as _
@@ -20,6 +19,21 @@ from apl.doclegis.config import PROJECTNAME
 from apl.doclegis.browser import vocabulary
 
 DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
+
+    atapi.TextField(
+        name='title',
+        required=1,
+        searchable=1,
+        default='',
+        accessor='Title',
+        widget=atapi.StringWidget(
+            label_msgid='label_title',
+            maxlength='1000',
+            visible={'view': 'invisible'},
+            i18n_domain='plone',
+        ),
+    ),
+
 
     # -*- Your Archetypes field definitions here ... -*-
     atapi.StringField(

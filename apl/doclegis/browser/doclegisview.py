@@ -36,50 +36,55 @@ class DocLegisView(BrowserView):
         return getToolByName(self.context, 'portal_url').getPortalObject()
 
     def get_doclegis(self):
-        # XXX check if content is DocLegis
         results = []
-        for doclegis in self.context.contentValues():
-            if doclegis.getPortalTypeName() == "DocLegis":
-                date = doclegis.date
-                formated_date = ''
-                year = ''
-                if date:
-                    formated_date = "{0}/{1}/{2}".format(date.day(),
-                                                         date.month(),
-                                                         date.year())
-                    year = date.year()
-                #publication_date = doclegis.getDatepublication()
-                #if publication_date:
-                #    year = publication_date.year()
-                msgid = _(doclegis.document_type)
-                document_type = self.context.translate(msgid)
+        catalog = self.portal_catalog
+        path = '/'.join(self.context.getPhysicalPath())
+        brains = catalog.searchResults({'portal_type': 'DocLegis',
+                                        'review_state': 'published'},
+                                        path={'query': path, 'depth': 1},
+                                        )
+        for brain in brains:
+            doclegis = brain.getObject()
+            date = doclegis.date
+            formated_date = ''
+            year = ''
+            if date:
+                formated_date = "{0}/{1}/{2}".format(date.day(),
+                                                     date.month(),
+                                                     date.year())
+                year = date.year()
+            #publication_date = doclegis.getDatepublication()
+            #if publication_date:
+            #    year = publication_date.year()
+            msgid = _(doclegis.document_type)
+            document_type = self.context.translate(msgid)
 
-                trans_theme = []
-                trans_institution = []
-                trans_commune = []
+            trans_theme = []
+            trans_institution = []
+            trans_commune = []
 
-                for theme in doclegis.theme:
-                    msgid = _(theme)
-                    trans_theme.append(self.context.translate(msgid))
+            for theme in doclegis.theme:
+                msgid = _(theme)
+                trans_theme.append(self.context.translate(msgid))
 
-                for institution in doclegis.institution:
-                    msgid = _(institution)
-                    trans_institution.append(self.context.translate(msgid))
+            for institution in doclegis.institution:
+                msgid = _(institution)
+                trans_institution.append(self.context.translate(msgid))
 
-                for commune in doclegis.commune:
-                    msgid = _(commune)
-                    trans_commune.append(self.context.translate(msgid))
+            for commune in doclegis.commune:
+                msgid = _(commune)
+                trans_commune.append(self.context.translate(msgid))
 
-                results.append({
-                    'title': doclegis.title,
-                    'document_type': document_type,
-                    'date': formated_date,
-                    'annee': year,
-                    'theme': ", ".join(trans_theme),
-                    'institution': ", ".join(trans_institution),
-                    'commune': ", ".join(trans_commune),
-                    'absolute_url': doclegis.absolute_url,
-                })
+            results.append({
+                'title': doclegis.title,
+                'document_type': document_type,
+                'date': formated_date,
+                'annee': year,
+                'theme': ", ".join(trans_theme),
+                'institution': ", ".join(trans_institution),
+                'commune': ", ".join(trans_commune),
+                'absolute_url': doclegis.absolute_url,
+            })
         return results
 
 
@@ -88,9 +93,6 @@ class IDocLegisSimpleView(Interface):
     """
     DocLegis view interface
     """
-
-    def get_doclegis():
-        """ test method"""
 
 
 class DocLegisSimpleView(BrowserView):

@@ -105,7 +105,8 @@ $(document).ready(function() {
         },
         "aoColumnDefs": [
         	{"bVisible": false, "aTargets": [3, 4, 5, 6]}
-        ]
+        ],
+        "aaSorting": [[2, "desc"]]
     });
 
     var tous = ["Tous ...", "Alles ..."];

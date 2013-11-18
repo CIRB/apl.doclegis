@@ -4,7 +4,9 @@ Changelog
 1.1.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update translations.
+- Add some fields to vocabulary.
+- Add sort on date for Datatables.
 
 
 1.1.7 (2013-10-09)

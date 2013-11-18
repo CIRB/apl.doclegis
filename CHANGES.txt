@@ -4,7 +4,8 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Revert years from datecomponents.
+- Don't view url and file if they are empty.
 
 
 1.1.9 (2013-11-18)

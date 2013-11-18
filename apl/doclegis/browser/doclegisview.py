@@ -1,9 +1,11 @@
+# -*- coding: utf-8 -*-
 from zope.interface import implements, Interface
 
 from Products.Five import BrowserView
 from Products.CMFCore.utils import getToolByName
 
 from apl.doclegis import doclegisMessageFactory as _
+from plone.app.form.widgets.datecomponents import DateComponents
 
 
 class IDocLegisView(Interface):
@@ -158,3 +160,28 @@ class DocLegisSimpleView(BrowserView):
         #file_size
         # download_url fieldname filename filename_encoded
         return " ".join(html)
+
+
+class DateComponentsDocLegis(DateComponents):
+
+    def result(self, date=None,
+               use_ampm=False,
+               starting_year=None,
+               ending_year=None,
+               future_years=None,
+               minute_step=5):
+        """Returns a dict with date information.
+        """
+        res = super(DateComponentsDocLegis, self).result(date=date,
+                use_ampm=use_ampm,
+                starting_year=starting_year,
+                ending_year=ending_year,
+                future_years=future_years,
+                minute_step=minute_step)
+        years = res['years']
+        years.reverse()
+        first = years.pop()
+        years.insert(0, first)
+        #res['years'] = years
+        return res
+

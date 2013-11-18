@@ -48,4 +48,13 @@
         directory="static"
         layer="..interfaces.IAplDoclegisLayer"
         />
+
+  <browser:page
+        name="date_components_support"
+        for="apl.doclegis.content.doclegis.DocLegis"
+        permission="zope2.View"
+        class=".doclegisview.DateComponentsDocLegis"
+        allowed_interface="plone.app.form.widgets.datecomponents.IDateComponents"
+        />
+ 
 </configure>

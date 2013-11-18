@@ -92,7 +92,6 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
             show_hm=False,
             starting_year=1789,
         ),
-        default_method='getDefaultTime',
         validators=('isValidDate'),
     ),
 

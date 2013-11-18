@@ -138,6 +138,8 @@ DocLegisSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
         widget=atapi.StringWidget(
             label=_(u"Url ou se trouve le document"),
             description=_(u""),
+            size=500,
+            maxlength=500,
         ),
         validators=('isURL'),
     ),

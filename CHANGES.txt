@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1.9 (unreleased)
+1.1.9 (2013-11-18)
 ------------------
 
 - Increase size of URL to 500.

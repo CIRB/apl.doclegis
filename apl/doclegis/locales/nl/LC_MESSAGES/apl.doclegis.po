@@ -18,12 +18,12 @@ msgstr "beschrijving"
 
 #: apl.doclegis:/browser/doclegissimpleview.pt:38
 msgid "Consultez le fichier en ligne"
-msgstr "Consultez le fichier en ligne"
+msgstr "Bekijken het bestand online"
 
 #. Default: "T\303\251l\303\251charger le fichier"
 #: apl.doclegis:/browser/doclegissimpleview.pt:44
 msgid "Telecharger le fichier"
-msgstr "Télécharger le fichier"
+msgstr "Het bestand downloaden"
 
 #: apl.doclegis:/browser/doclegisview.pt:11
 msgid "document_type"

@@ -18,6 +18,9 @@ TYPE = create_dl([
     ('arreteministeriel', _(u'arreteministeriel')),
     ('circulaire', _(u'circulaire')),
     ('reglement', _(u'reglement')),
+    ('arretecocom', _(u'arretecocom')),
+    ('arretecocof', _(u'arretecocof')),
+    ('arretevgc', _(u'arretevgc')),
 ])
 
 INSTITUTIONS = create_dl([
@@ -28,10 +31,8 @@ INSTITUTIONS = create_dl([
     ('regiescommunales', _(u'regiescommunales')),
     ('zonesdepolice', _(u'zonesdepolice')),
     ('lemontdepiete', _(u'lemontdepiete')),
-    ('lesassociationschapitrexii',
-        _(u'lesassociationschapitrexii')),
-    ('lereseauhospitalieriris',
-        _(u'lereseauhospitalieriris')),
+    ('lesassociationschapitrexii', _(u'lesassociationschapitrexii')),
+    ('lereseauhospitalieriris', _(u'lereseauhospitalieriris')),
 ])
 
 THEMES = create_dl([
@@ -44,6 +45,7 @@ THEMES = create_dl([
     ('finances', _(u'finances')),
     ('international', _(u'international')),
     ('personnel', _(u'personnel')),
+    ('tutelle', _(u'tutelle')),
 ])
 
 COMMUNES = create_dl([

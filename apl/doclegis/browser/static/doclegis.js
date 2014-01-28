@@ -95,18 +95,63 @@ function getListValue(numcols) {
 	return eliminateDuplicates(out);
 }
 
+function trim(str) {
+    str = str.replace(/^\s+/, '');
+    for (var i = str.length - 1; i >= 0; i--) {
+        if (/\S/.test(str.charAt(i))) {
+            str = str.substring(0, i + 1);
+            break;
+        }
+    }
+    return str;
+}
+
+function dateHeight(dateStr){
+    var x;
+    if (trim(dateStr) != '') {
+        var frDate = trim(dateStr).split(' ');
+        //var frTime = frDate[1].split(':');
+        var frDateParts = frDate[0].split('/');
+        var day = frDateParts[0] * 60 * 24;
+        var month = frDateParts[1] * 60 * 24 * 31;
+        var year = frDateParts[2] * 60 * 24 * 366;
+        //var hour = frTime[0] * 60;
+        //var minutes = frTime[1];
+        x = day+month+year;//+hour+minutes;
+    } else {
+        x = 99999999999999999; //GoHorse!
+    }
+    return x;
+}
+
+jQuery.fn.dataTableExt.oSort['date-euro-asc'] = function(a, b) {
+    var x = dateHeight(a);
+    var y = dateHeight(b);
+    var z = ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    return z;
+};
+
+jQuery.fn.dataTableExt.oSort['date-euro-desc'] = function(a, b) {
+    var x = dateHeight(a);
+    var y = dateHeight(b);
+    var z = ((x < y) ? 1 : ((x > y) ? -1 : 0));
+    return z;
+};
+
+
 $(document).ready(function() {
-     if ($('table#doclegisTable').length==0){return}
+    if ($('table#doclegisTable').length==0){return}
     var lang = $('html').attr('lang');
     /* Initialise the DataTable */
     oTable = $('#doclegisTable').dataTable( {
         "oLanguage": {
             "sUrl": "@@collective.js.datatables.translation"
         },
-        "aoColumnDefs": [
-        	{"bVisible": false, "aTargets": [3, 4, 5, 6]}
-        ],
-        "aaSorting": [[2, "desc"]]
+           "aoColumnDefs": [
+    {"bVisible": false, "aTargets": [3, 4, 5, 6]},
+           {"aTargets": [ 2 ], "bSortable": true, "sType": "date-euro"},
+           ],
+           "aaSorting": [[2, "desc"]]
     });
 
     var tous = ["Tous ...", "Alles ..."];
@@ -114,52 +159,52 @@ $(document).ready(function() {
     var numlang = 0;
     if (lang == "nl"){numlang = 1;}
     $('div#filter_document_type').html(
-    	fnCreateSelect( oTable.fnGetColumnData(1), tous[numlang] ));
+        fnCreateSelect( oTable.fnGetColumnData(1), tous[numlang] ));
     $('select', 'div#filter_document_type').change(
-    	function () {
-            oTable.fnFilter( $(this).val(), 1 );
-     	}
-     );
+            function () {
+                oTable.fnFilter( $(this).val(), 1 );
+            }
+            );
 
     $('div#filter_theme').html(
-    	fnCreateSelect( getListValue(4), tous[numlang]  ));
+            fnCreateSelect( getListValue(4), tous[numlang]  ));
     $('select', 'div#filter_theme').change(
-    	function () {
-            oTable.fnFilter( $(this).val(), 4 );
-     	}
-     );
+            function () {
+                oTable.fnFilter( $(this).val(), 4 );
+            }
+            );
 
     $('div#filter_year').html(
-    	fnCreateSelect( oTable.fnGetColumnData(3), toutes[numlang] ));
+            fnCreateSelect( oTable.fnGetColumnData(3), toutes[numlang] ));
     $('select', 'div#filter_year').change(
-    	function () {
-            oTable.fnFilter( $(this).val(), 3 );
-     	}
-     );
+            function () {
+                oTable.fnFilter( $(this).val(), 3 );
+            }
+            );
 
     $('div#filter_institution').html(
-    	fnCreateSelect( getListValue(5), toutes[numlang]));
+            fnCreateSelect( getListValue(5), toutes[numlang]));
     $('select', 'div#filter_institution').change(
-    	function () {
-    		val = $(this).val();
-            oTable.fnFilter(val, 5 );
-            if (val == "Communes" ||  val == "CPAS" ||
-            	val == 'Gemeenten' || val == "OCMW"
-            	){
-            	$('#spantohid').show();
-            } else {
-            	$('#spantohid').hide();
+            function () {
+                val = $(this).val();
+                oTable.fnFilter(val, 5 );
+                if (val == "Communes" ||  val == "CPAS" ||
+                    val == 'Gemeenten' || val == "OCMW"
+                   ){
+                       $('#spantohid').show();
+                   } else {
+                       $('#spantohid').hide();
+                   }
             }
-     	}
-     );
+            );
     $('#spantohid').hide();
 
     $('div#filter_commune').html(
-    	fnCreateSelect( getListValue(6), toutes[numlang]  ));
+            fnCreateSelect( getListValue(6), toutes[numlang]  ));
     $('select', 'div#filter_commune').change(
-    	function () {
-            oTable.fnFilter( $(this).val(), 6 );
-     	}
-     );
+            function () {
+                oTable.fnFilter( $(this).val(), 6 );
+            }
+            );
 
 } );

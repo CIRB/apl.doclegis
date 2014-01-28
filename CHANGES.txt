@@ -4,7 +4,8 @@ Changelog
 1.1.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Sort date by euro format (datatables).
+  [bsuttor]
 
 
 1.1.10 (2013-11-18)
